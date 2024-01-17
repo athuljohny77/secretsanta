@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Secret Santa Pairing</title>
+        <title>BP Studio - Secret Santa</title>
 
         <script src="vendors/Lodash-3.10.1.js"></script>
         <script src="vendors/Cryptojs.aes-3.1.2.js"></script>
@@ -33,7 +33,7 @@
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
 
-                font-family: 'Comic Sans MS';
+                font-family: 'Arial';
             }
 
             @keyframes snow {
@@ -100,6 +100,7 @@
 
             #pairing-name {
                 font-size: 90px;
+                color: blue;
             }
 
             #pairing-details {
@@ -147,7 +148,7 @@
             <div class="wrapper">
                 <div class="content">
 
-                    <div class="title">Hi <span id="name"></span>! You've been paired with</div>
+                    <div class="title">Hi <span id="name"></span> ! You've been paired with</div>
                     <script>document.getElementById('name').innerText = name</script>
 
                     <div class="pairing">
@@ -164,7 +165,8 @@
                         </script>
                     </div>
 
-                    <div class="title">Good luck!</div>
+                    <div class="title">Please don't show anyone!</div><br>
+                    <img src="./assets/BP_logo.PNG" width="50%">
 
                     <script>
                         if (queryString.extra) {
@@ -174,10 +176,6 @@
 
                 </div>
             </div>
-
-            <a href="http://arcanis.github.io/secretsanta/" class="spirit-of-christmas">
-                Want to start your own Secret Santa with your friends? Click here to get started!
-            </a>
 
         </div>
 
